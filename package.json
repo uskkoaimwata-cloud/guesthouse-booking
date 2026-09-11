@@ -1,0 +1,24 @@
+{
+  "name": "la-coastal-admin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.98.0",
+    "framer-motion": "^11.16.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.7",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.7.0",
+    "vite": "^6.3.5"
+  }
+}
