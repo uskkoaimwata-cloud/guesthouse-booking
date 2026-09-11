@@ -1,19 +1,17 @@
 {
-  "name": "guesthouse-booking",
+  "name": "la-coastal-admin",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "typecheck": "tsc --noEmit"
+    "build": "vite build"
   },
   "dependencies": {
-    "date-fns": "^2.30.0",
+    "@supabase/supabase-js": "^2.98.0",
     "framer-motion": "^11.16.1",
     "lucide-react": "^0.294.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "uuid": "^14.0.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.7",
