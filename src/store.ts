@@ -1,4 +1,4 @@
-port { Booking } from './types';
+import { Booking } from './types';
 
 const STORAGE_KEY = 'guesthouse_bookings';
 
