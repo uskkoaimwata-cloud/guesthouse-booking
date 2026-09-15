@@ -59,25 +59,6 @@ footer{background:#123d49;color:#c9d6dc;text-align:center;padding:25px}.mobile-m
 .booking-success h3{color:var(--navy);font-size:1.5rem;margin-bottom:12px}
 .booking-success p{color:var(--muted);font-size:.95rem;line-height:1.6}
 .booking-success .checkmark{width:60px;height:60px;background:#218653;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:#fff;font-size:1.5rem}
-.reviews{background:var(--sand)}
-.review-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:44px}
-.review-card{background:#fff;border:1px solid #dcecef;border-radius:16px;padding:22px;box-shadow:0 8px 25px #174b5a0d;display:flex;flex-direction:column}
-.review-photo{width:100%;height:140px;border-radius:10px;object-fit:cover;margin-bottom:14px}
-.review-stars{color:#f0c878;font-size:1rem;letter-spacing:2px;margin-bottom:10px}
-.review-card p{color:var(--text);font-size:.93rem;flex:1;margin-bottom:14px}
-.review-meta{display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:var(--muted);border-top:1px solid #eef3f4;padding-top:12px}
-.review-meta strong{color:var(--navy)}
-.review-empty{grid-column:1/-1;text-align:center;color:var(--muted);background:#fff;border:1px dashed #cfe0e4;border-radius:16px;padding:36px 20px}
-.review-form-wrap{background:#fff;border-radius:18px;padding:30px;max-width:640px;margin:auto;box-shadow:0 10px 30px #174b5a12}
-.review-form-wrap>h3{color:var(--navy);margin-bottom:16px}
-.star-picker{display:flex;gap:6px;margin-top:5px}
-.star-picker button{background:none;border:0;font-size:1.7rem;line-height:1;color:#d8e2e5;cursor:pointer;padding:0}
-.star-picker button.filled{color:#f0c878}
-.review-photo-upload{display:block;border:1.5px dashed #cfe0e4;border-radius:10px;padding:14px;text-align:center;font-size:.85rem;color:var(--muted);cursor:pointer;margin-top:5px}
-.review-photo-upload:hover{border-color:var(--blue)}
-.review-photo-preview{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.review-photo-preview img{width:56px;height:56px;object-fit:cover;border-radius:8px}
-@media(max-width:850px){.review-cards{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -85,7 +66,7 @@ footer{background:#123d49;color:#c9d6dc;text-align:center;padding:25px}.mobile-m
 <nav class="container">
 <a href="#home" class="logo"><img src="/logo.png" alt="La Coastal Guesthouse" /></a>
 <div class="navlinks" id="navlinks">
-<a href="#about">About</a><a href="#gallery">Gallery</a><a href="#rooms">Rooms</a><a href="#reviews">Reviews</a><a href="#availability">Availability</a><a href="#social">Socials</a><a href="#contact">Contact</a><a class="btn" href="#booking">Book Now</a>
+<a href="#about">About</a><a href="#gallery">Gallery</a><a href="#rooms">Rooms</a><a href="#availability">Availability</a><a href="#social">Socials</a><a href="#contact">Contact</a><a class="btn" href="#booking">Book Now</a>
 </div>
 <button class="mobile-menu" onclick="toggleMenu()" aria-label="Menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
 </nav>
@@ -138,26 +119,6 @@ footer{background:#123d49;color:#c9d6dc;text-align:center;padding:25px}.mobile-m
 <div class="room-option"><div class="room-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1 17v-4a1.5 1.5 0 0 1 1.5-1.5h6A1.5 1.5 0 0 1 10 12.5V17"/><path d="M14 17v-4a1.5 1.5 0 0 1 1.5-1.5h6a1.5 1.5 0 0 1 1.5 1.5V17"/><path d="M1 17v2M22 17v2"/><path d="M2 11.5V8a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3.5M14.5 11.5V8a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3.5"/></svg></div><div><h3>Standard Twin Room</h3><p>Two single beds, great for friends or colleagues travelling together.</p></div></div>
 <div class="room-option"><div class="room-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 14c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0 3.5 2 5 0"/><path d="M2 18c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0 3.5 2 5 0"/></svg></div><div><h3>Sea View Room</h3><p>Wake up to ocean views, a short walk from Independence Beach.</p></div></div>
 <div class="room-option"><div class="room-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><path d="M2 20v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v1"/><circle cx="17.5" cy="9.5" r="2.3"/><path d="M15 20v-.7a4 4 0 0 1 3-3.9"/></svg></div><div><h3>Family Room</h3><p>Comfortable accommodation for families and small groups.</p></div></div>
-</div>
-</div>
-</section>
-
-<section class="reviews" id="reviews">
-<div class="container">
-<div class="section-head"><div class="eyebrow">Guest Reviews</div><h2>What our guests are saying</h2><p>Real feedback from people who've stayed at La Coastal.</p></div>
-<div class="review-cards" id="reviewCards"><div class="review-empty">Loading reviews...</div></div>
-<div class="review-form-wrap">
-<h3>Leave a review</h3>
-<div class="booking-success review-success" id="reviewSuccess"><div class="checkmark">&#10003;</div><h3>Review Submitted!</h3><p>Thanks for sharing your stay. It'll appear here once we've checked it over.</p></div>
-<form id="reviewForm">
-<div class="full"><label for="revName">Your name</label><input id="revName" required placeholder="Full name"></div>
-<div class="full"><label>Rating</label><div class="star-picker" id="starPicker">
-<button type="button" data-star="1">&#9733;</button><button type="button" data-star="2">&#9733;</button><button type="button" data-star="3">&#9733;</button><button type="button" data-star="4">&#9733;</button><button type="button" data-star="5">&#9733;</button>
-</div><input type="hidden" id="revRating" value="5"></div>
-<div class="full"><label for="revComment">Your review</label><textarea id="revComment" rows="4" required placeholder="Tell us about your stay"></textarea></div>
-<div class="full"><label for="revPhotos">Add photos (optional)</label><label class="review-photo-upload" for="revPhotos">Tap to add photos of your stay</label><input id="revPhotos" type="file" accept="image/*" multiple style="display:none" onchange="previewPhotos()"><div class="review-photo-preview" id="photoPreview"></div></div>
-<div class="full"><button class="btn btn-blue" type="submit" id="reviewSubmitBtn">Submit Review</button><div class="notice" id="reviewNotice"></div></div>
-</form>
 </div>
 </div>
 </section>
@@ -231,81 +192,6 @@ footer{background:#123d49;color:#c9d6dc;text-align:center;padding:25px}.mobile-m
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 var db = window.supabase.createClient('https://umpiasberurevfctywqv.supabase.co','sb_publishable_pCHFJ83v40aLkRNXipu3CA_OMkR4PYW');
-function escapeHtml(s){
- return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]});
-}
-async function loadReviews(){
- const wrap=document.getElementById('reviewCards');
- const r=await db.from('reviews').select('id,guest_name,rating,comment,created_at,review_photos(url)').eq('status','approved').order('created_at',{ascending:false}).limit(9);
- if(r.error||!r.data||!r.data.length){
-  wrap.innerHTML='<div class="review-empty">Be the first to share your stay — leave a review below.</div>';
-  return;
- }
- wrap.innerHTML=r.data.map(function(rv){
-  const stars='&#9733;'.repeat(rv.rating||5)+'&#9734;'.repeat(5-(rv.rating||5));
-  const photo=(rv.review_photos&&rv.review_photos[0])?'<img class="review-photo" src="'+rv.review_photos[0].url+'">':'';
-  const date=new Date(rv.created_at).toLocaleDateString('en-GB',{month:'short',year:'numeric'});
-  return '<div class="review-card">'+photo+'<div class="review-stars">'+stars+'</div><p>'+escapeHtml(rv.comment)+'</p><div class="review-meta"><strong>'+escapeHtml(rv.guest_name)+'</strong><span>'+date+'</span></div></div>';
- }).join('');
-}
-loadReviews();
-let selectedRating=5;
-function paintStars(){
- document.querySelectorAll('#starPicker button').forEach(function(b){b.classList.toggle('filled',parseInt(b.dataset.star)<=selectedRating)});
-}
-document.querySelectorAll('#starPicker button').forEach(function(btn){
- btn.addEventListener('click',function(){
-  selectedRating=parseInt(btn.dataset.star);
-  document.getElementById('revRating').value=selectedRating;
-  paintStars();
- });
-});
-paintStars();
-let selectedPhotos=[];
-function previewPhotos(){
- selectedPhotos=Array.from(document.getElementById('revPhotos').files).slice(0,4);
- const p=document.getElementById('photoPreview');
- p.innerHTML='';
- selectedPhotos.forEach(function(f){
-  const img=document.createElement('img');
-  img.src=URL.createObjectURL(f);
-  p.appendChild(img);
- });
-}
-document.getElementById('reviewForm').addEventListener('submit', async function(e){
- e.preventDefault();
- const b=document.getElementById('reviewSubmitBtn');
- const n=document.getElementById('reviewNotice');
- b.disabled=true;
- b.textContent='Submitting...';
- n.textContent='Please wait...';
- n.style.color='';
- const reviewId=crypto.randomUUID();
- const r=await db.from('reviews').insert([{
-  id:reviewId,
-  guest_name:document.getElementById('revName').value,
-  rating:parseInt(document.getElementById('revRating').value),
-  comment:document.getElementById('revComment').value,
-  status:'pending'
- }]);
- if(r.error){
-  n.textContent='Error submitting review. Please try again.';
-  n.style.color='#c53030';
-  b.disabled=false;
-  b.textContent='Submit Review';
-  return;
- }
- for(const file of selectedPhotos){
-  const path=reviewId+'-'+Date.now()+'-'+file.name;
-  const up=await db.storage.from('review-photos').upload(path,file);
-  if(!up.error){
-   const pub=db.storage.from('review-photos').getPublicUrl(path);
-   await db.from('review_photos').insert([{review_id:reviewId,url:pub.data.publicUrl}]);
-  }
- }
- document.getElementById('reviewForm').style.display='none';
- document.getElementById('reviewSuccess').classList.add('show');
-});
 function toggleMenu(){
  const n=document.getElementById('navlinks');
  if(getComputedStyle(n).display==='none'){n.style.display='flex';n.style.position='absolute';n.style.top='72px';n.style.left='0';n.style.right='0';n.style.background='#174b5a';n.style.padding='18px';n.style.flexDirection='column'}
