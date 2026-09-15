@@ -1,4 +1,3 @@
---- src/App.tsx
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { supabase } from './lib/supabase';
@@ -254,7 +253,6 @@ export default function App() {
 }
 
 
-+++ src/App.tsx (修改后)
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { supabase } from './lib/supabase';
