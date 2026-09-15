@@ -1,4 +1,4 @@
-
+--- package.json (原始)
 {
   "name": "la-coastal-admin",
   "private": true,
@@ -9,11 +9,9 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.98.0",
-    "@types/node": "^26.5.1",
     "framer-motion": "^11.16.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "resend": "^6.28.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.7",
@@ -27,6 +25,7 @@
 }
 
 
++++ package.json (修改后)
 {
   "name": "la-coastal-admin",
   "private": true,
@@ -37,9 +36,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.98.0",
-    "@types/node": "^26.5.1",
     "framer-motion": "^11.16.1",
-    "lucide-react": "^1.46.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "resend": "^6.28.0"
