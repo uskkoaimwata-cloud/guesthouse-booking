@@ -27,7 +27,6 @@
 }
 
 
-+++ package.json (修改后)
 {
   "name": "la-coastal-admin",
   "private": true,
